@@ -1,0 +1,6 @@
+
+version: 2
+
+models:
+    - name: DQ_QA_Module
+      description: "A starter dbt model"
