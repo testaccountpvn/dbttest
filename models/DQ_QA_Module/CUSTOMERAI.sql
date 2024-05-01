@@ -1,4 +1,4 @@
 with cus as (
-    Select * FROM DQLABS.CUSTOMERAI.CUSTOMERAI
+    Select * FROM main.dqlabs.financial_performance_table
 )
 select * from cus

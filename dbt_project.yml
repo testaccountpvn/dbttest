@@ -37,4 +37,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   DQ_QA_Module:
-      +materialized: view
+      materialized: view
