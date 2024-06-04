@@ -38,4 +38,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 sources:
   DQ_QA_Module:
-      materialized: view
+    materialized: view
