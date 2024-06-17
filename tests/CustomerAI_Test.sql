@@ -1,3 +1,3 @@
 Select count(*)
-from {{ref('CustomerAI_TestFile')}}
+from {{ ref('consolidated_vw') }}
 having count(*) = 0
