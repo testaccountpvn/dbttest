@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: finance_model
+  - name: consolidated_data_vw
     columns:
       - name: property_id
         tests:
