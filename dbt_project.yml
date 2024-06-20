@@ -39,3 +39,7 @@ models:
   dbttest:
     DQ_QA_Module:
       +materialized: view
+    finance_model:
+      +materialized: view
+    property_model:
+      +materialized: view
