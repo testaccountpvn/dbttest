@@ -3,7 +3,7 @@
 WITH validation AS (
     SELECT
         profit as tested_column
-    FROM {{ ref('financial_performance') }}
+    FROM {{ ref('consolidated_vw') }}
 ),
 
 errors AS (

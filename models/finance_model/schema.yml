@@ -1,1 +1,9 @@
 version: 2
+
+models:
+  - name: finance_model
+    columns:
+      - name: property_id
+        tests:
+          - not_null_test
+
