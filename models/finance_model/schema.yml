@@ -15,4 +15,14 @@ models:
           - not_null:
               config:
                 fail_calc: "case when count(*) > 0 then sum(n_records) else 0 end"
+  - name: financial_performance_data
+    columns:
+      - name: financing_details
+        tests:
+          - unique:
+              config:
+                fail_calc: "case when count(*) > 0 then sum(n_records) else 0 end"
+          - not_null:
+              config:
+                fail_calc: "case when count(*) > 0 then sum(n_records) else 0 end"
 
