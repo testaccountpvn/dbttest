@@ -5,7 +5,9 @@ models:
     columns:
       - name: property_id
         tests:
-          - unique
+          - unique:
+              config:
+                store_failures_as: ephemeral
           - not_null
   - name: financial_performance_data
     columns:
@@ -15,6 +17,12 @@ models:
               config:
                 fail_calc: "case when count(*) > 0 then sum(n_records) else 0 end"
                 store_failures: true
+                store_failures_as: ephemeral
           - not_null:
               config:
                 store_failures: true
+                error_if: ">100"
+                warn_if: ">10"
+                store_failures_as: ephemeral
+
+
