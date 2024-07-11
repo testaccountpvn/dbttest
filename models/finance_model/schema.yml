@@ -7,4 +7,12 @@ models:
         tests:
           - unique
           - not_null
+      - name: financing_details
+        tests:
+          - unique:
+              config:
+                fail_calc: "case when count(*) > 0 then sum(n_records) else 0 end"
+          - not_null:
+              config:
+                fail_calc: "case when count(*) > 0 then sum(n_records) else 0 end"
 
