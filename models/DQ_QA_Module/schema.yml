@@ -4,5 +4,9 @@ models:
     columns:
       - name: property_id
         tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                store_failures: true
+          - not_null:
+              config:
+                store_failures: true
