@@ -1,3 +1,4 @@
+{{ config(store_failures = true) }}
 select
     property_id,
     sum(rental_income) as total_amount
