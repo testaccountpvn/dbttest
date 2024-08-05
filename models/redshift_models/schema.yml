@@ -1,6 +1,6 @@
 version: 2
 models:
-  - name: consolidated_vw
+  - name: rd_consolidated_vw
     columns:
       - name: property_id
         tests:
